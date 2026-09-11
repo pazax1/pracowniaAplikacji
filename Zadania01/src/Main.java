@@ -28,26 +28,40 @@ void main() {
     //          danych wypisać w konsoli odpowiednią informację o tym dla użytkownika. Następnie napisz program służący do konwersji wartości temperatury podanej w stopniach Celsjusza
     //          na stopnie w skali Fahrenheita (stopnie Fahrenheita = 1.8 * stopnie Celsjusza + 32.0).
 
-    double stopnie = 0;
-
+//    double stopnie = 0;
+//
     Scanner scanner = new Scanner(System.in);
-
-    System.out.print("Podaj temperature na dworzę (w mierze Celsjusza): ");
-
-    stopnie = scanner.nextDouble();
-
-    double konwersja = 1.8 * stopnie + 32.0;
-
-    System.out.println("Jest " + konwersja + " stopni Fahrenheita");
+//
+//    System.out.print("Podaj temperature na dworzę (w mierze Celsjusza): ");
+//
+//    stopnie = scanner.nextDouble();
+//
+//    double konwersja = 1.8 * stopnie + 32.0;
+//
+//    System.out.println("Jest " + konwersja + " stopni Fahrenheita");
 
     // Zad.5 Napisz program, który pobierze od użytkownika trzy boki trójkąta, policzy jego obwód i wypisze wynik na ekran.
 
+    double a;
+    double b;
+    double c;
+
+    System.out.print("Podaj pierwszy bok: ");
+    a = scanner.nextDouble();
+    System.out.print("Podaj drugi bok: ");
+    b = scanner.nextDouble();
+    System.out.print("Podaj trzeci bok: ");
+    c = scanner.nextDouble();
+
+    System.out.println("Obwód wynosi: " + (a+b+c));
             /* Zad.6 Napisz program, który wczyta od użytkownika trzy słowa i wypisze je w odwrotnej kolejności, niż podał je użytkownik, oddzielone przecinkami. Dla przykładu, gdy użytkownik poda:
 
     Ala
             ma
     kota
     To program powinien wypisać kota, ma, Ala */
+
+
 
     /* Zad.7 Napisz program, który wczyta od użytkownika jeden wyraz i wypisz liczbę znaków, z których się składa. Dla przykładu, dla podanego słowa nauka wypisze 5.
 
