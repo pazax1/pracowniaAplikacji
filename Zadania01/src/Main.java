@@ -42,25 +42,38 @@ void main() {
 
     // Zad.5 Napisz program, który pobierze od użytkownika trzy boki trójkąta, policzy jego obwód i wypisze wynik na ekran.
 
-    double a;
-    double b;
-    double c;
-
-    System.out.print("Podaj pierwszy bok: ");
-    a = scanner.nextDouble();
-    System.out.print("Podaj drugi bok: ");
-    b = scanner.nextDouble();
-    System.out.print("Podaj trzeci bok: ");
-    c = scanner.nextDouble();
-
-    System.out.println("Obwód wynosi: " + (a+b+c));
-            /* Zad.6 Napisz program, który wczyta od użytkownika trzy słowa i wypisze je w odwrotnej kolejności, niż podał je użytkownik, oddzielone przecinkami. Dla przykładu, gdy użytkownik poda:
+//    double a;
+//    double b;
+//    double c;
+//
+//    System.out.print("Podaj pierwszy bok: ");
+//    a = scanner.nextDouble();
+//    System.out.print("Podaj drugi bok: ");
+//    b = scanner.nextDouble();
+//    System.out.print("Podaj trzeci bok: ");
+//    c = scanner.nextDouble();
+//
+//    System.out.println("Obwód wynosi: " + (a+b+c));
+            /* Zad.6 Napisz program, który wczyta od użytkownika trzy słowa i wypisze je w odwrotnej kolejności, niż podał je użytkownik, oddzielone przecinkami. Dla przykładu, gdy
+            użytkownik poda:
 
     Ala
             ma
     kota
     To program powinien wypisać kota, ma, Ala */
 
+    String pierwsze;
+    String drugie;
+    String trzecie;
+
+    System.out.print("Podaj pierwsze slowo: ");
+    pierwsze = scanner.nextLine();
+    System.out.print("Podaj drugie slowo: ");
+    drugie = scanner.nextLine();
+    System.out.print("Podaj trzecie slowo: ");
+    trzecie = scanner.nextLine();
+
+    System.out.println(trzecie + " " + drugie + " " + pierwsze);
 
 
     /* Zad.7 Napisz program, który wczyta od użytkownika jeden wyraz i wypisz liczbę znaków, z których się składa. Dla przykładu, dla podanego słowa nauka wypisze 5.
