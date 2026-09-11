@@ -22,6 +22,8 @@ void main() {
 
     Mam na imię <imie>, mam <obecny rok minus Twój rok urodzenia> lat  i będę pisać maturę za <zmienna 0,66> roku. */
 
+    System.out.println("Mam na imię " + imie + " mam " + (2025 - 2007) + " lat i będę pisać maturę za " + liczba + " roku");
+
             // Zad.4 Stwórz zmienną o nazwie stopnie. Wczytaj od użytkownika informację dotyczącą temperatury na dworze - pamiętaj o tym, żeby przed wczytaniem danych wypisać w konsoli odpowiednią informację o tym dla użytkownika. Następnie napisz program służący do konwersji wartości temperatury podanej w stopniach Celsjusza na stopnie w skali Fahrenheita (stopnie Fahrenheita = 1.8 * stopnie Celsjusza + 32.0).
 
     // Zad.5 Napisz program, który pobierze od użytkownika trzy boki trójkąta, policzy jego obwód i wypisze wynik na ekran.
