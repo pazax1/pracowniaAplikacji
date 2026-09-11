@@ -22,26 +22,43 @@ void main() {
 
 //    Zadanie 2. Napisz program, który wczyta od użytkownika trzy liczby i odpowie na pytanie, czy można z nich zbudować trójkąt (suma każdych dwóch boków powinna być większa od trzeciego boku).
 
-    double bokA;
-    double bokB;
-    double bokC;
+//    double bokA;
+//    double bokB;
+//    double bokC;
+//
+//    System.out.println("Podaj bok A: ");
+//    bokA = scanner.nextDouble();
+//    System.out.println("Podaj bok B: ");
+//    bokB = scanner.nextDouble();
+//    System.out.println("Podaj bok C: ");
+//    bokC = scanner.nextDouble();
+//
+//    if (bokA + bokB > bokC || bokB + bokC > bokA || bokA + bokC > bokB) {
+//        System.out.println("Mozna zrobic trojkat");
+//    }
+//
+//    else {
+//        System.out.println("Nie mozna zrobic trojkata");
+//    }
 
-    System.out.println("Podaj bok A: ");
-    bokA = scanner.nextDouble();
-    System.out.println("Podaj bok B: ");
-    bokB = scanner.nextDouble();
-    System.out.println("Podaj bok C: ");
-    bokC = scanner.nextDouble();
+//            Zadanie 3. Napisz program, który pobierze od użytkownika dwie liczby i wypisze największą z nich.
 
-    if (bokA + bokB > bokC || bokB + bokC > bokA || bokA + bokC > bokB) {
-        System.out.println("Mozna zrobic trojkat");
+    double l1;
+    double l2;
+
+    System.out.println("Liczba pierwsza: ");
+    l1 = scanner.nextDouble();
+    System.out.println("Liczba drugaa: ");
+    l2 = scanner.nextDouble();
+
+
+    if (l1 > l2) {
+        System.out.println("Wieksza jest " + l1);
     }
 
     else {
-        System.out.println("Nie mozna zrobic trojkata");
+        System.out.println("Wieksza jest " + l2);
     }
-
-//            Zadanie 3. Napisz program, który pobierze od użytkownika dwie liczby i wypisze największą z nich.
 
 //    Zadanie 4. Napisz program, który pobierze od użytkownika trzy liczby i wypisze największą z nich.
 
