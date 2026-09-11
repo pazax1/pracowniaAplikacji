@@ -1,13 +1,46 @@
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 void main() {
-    //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-    // to see how IntelliJ IDEA suggests fixing it.
-    IO.println(String.format("Hello and welcome!"));
+    // Zad.1 Wyświetl w 3 kolejnych liniach trzy imiona: Ania, Bartek, Kasia.
 
-    for (int i = 1; i <= 5; i++) {
-        //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-        // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-        IO.println("i = " + i);
-    }
+    System.out.println("Ania");
+    System.out.println("Bartek");
+    System.out.println("Kasia");
+            /* Zad.2 Zadeklaruj następujące zmienne:
+
+    - przechowującą Twoje imie,
+
+    - przechowującą Twój rok urodzenia,
+
+            - przechowującą liczbę 0,66 */
+
+    /* Zad.3 Wypisz na ekranie poniższe zdanie, gdzie informacje zawarte w znacznikach <> zastąpisz zmiennymi lub działaniami.
+
+    Mam na imię <imie>, mam <obecny rok minus Twój rok urodzenia> lat  i będę pisać maturę za <zmienna 0,66> roku. */
+
+            // Zad.4 Stwórz zmienną o nazwie stopnie. Wczytaj od użytkownika informację dotyczącą temperatury na dworze - pamiętaj o tym, żeby przed wczytaniem danych wypisać w konsoli odpowiednią informację o tym dla użytkownika. Następnie napisz program służący do konwersji wartości temperatury podanej w stopniach Celsjusza na stopnie w skali Fahrenheita (stopnie Fahrenheita = 1.8 * stopnie Celsjusza + 32.0).
+
+    // Zad.5 Napisz program, który pobierze od użytkownika trzy boki trójkąta, policzy jego obwód i wypisze wynik na ekran.
+
+            /* Zad.6 Napisz program, który wczyta od użytkownika trzy słowa i wypisze je w odwrotnej kolejności, niż podał je użytkownik, oddzielone przecinkami. Dla przykładu, gdy użytkownik poda:
+
+    Ala
+            ma
+    kota
+    To program powinien wypisać kota, ma, Ala */
+
+    /* Zad.7 Napisz program, który wczyta od użytkownika jeden wyraz i wypisz liczbę znaków, z których się składa. Dla przykładu, dla podanego słowa nauka wypisze 5.
+
+    Podpowiedź: Sprawdź w dokumentacji JavaDoc dla typu String jak dowiedzieć się z ile znaków składa się tekst przetrzymywany w zmiennej typu String: https://docs.oracle.com/javase/8/docs/api/java/lang/String.html */
+
+    /* Zad.8 Zmień poniższy kod, by wynik wypisany na ekran nie był liczbą zaokrągloną do całkowitej wartości, lecz zmienną rzeczywistą (z częścią ułamkową):
+
+    int x = 5;
+    int y = 2;
+    double wynik = x / y;
+    System.out.println(wynik); */
+
+    // Zad.9 Napisz program, który pobierze od użytkownika słowo i wypisze je z małymi literami zamienionymi na wielkie. Skorzystaj z metody toUpperCase typu String.
+
+    // Zad.10 Napisz program, który policzy pole koła o promieniu podanym przez użytkownika i wypisze wynik na ekran. Promień koła powinien być liczbą całkowitą – do jego przechowywania użyj zmiennej typu int.
 }
