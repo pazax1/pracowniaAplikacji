@@ -43,24 +43,51 @@ void main() {
 
 //            Zadanie 3. Napisz program, który pobierze od użytkownika dwie liczby i wypisze największą z nich.
 
+//    double l1;
+//    double l2;
+//
+//    System.out.println("Liczba pierwsza: ");
+//    l1 = scanner.nextDouble();
+//    System.out.println("Liczba drugaa: ");
+//    l2 = scanner.nextDouble();
+//
+//
+//    if (l1 > l2) {
+//        System.out.println("Wieksza jest " + l1);
+//    }
+//
+//    else {
+//        System.out.println("Wieksza jest " + l2);
+//    }
+
+//    Zadanie 4. Napisz program, który pobierze od użytkownika trzy liczby i wypisze największą z nich.
+
     double l1;
     double l2;
+    double l3;
 
     System.out.println("Liczba pierwsza: ");
     l1 = scanner.nextDouble();
-    System.out.println("Liczba drugaa: ");
+    System.out.println("Liczba druga: ");
     l2 = scanner.nextDouble();
+    System.out.println("Liczba trzecia: ");
+    l3 = scanner.nextDouble();
 
-
-    if (l1 > l2) {
+    if (l1 > l2 && l1 > l3) {
         System.out.println("Wieksza jest " + l1);
     }
 
-    else {
+    else if (l2 > l1 && l2 > l3) {
         System.out.println("Wieksza jest " + l2);
     }
 
-//    Zadanie 4. Napisz program, który pobierze od użytkownika trzy liczby i wypisze największą z nich.
+    else if (l3 > l1 && l3 > l2) {
+        System.out.println("Wieksza jest " + l3);
+    }
+
+    else {
+        System.out.println("Liczby sa rowne");
+    }
 
 //    Zadanie 5. Napisz program, który pobierze od użytkownika numer miesiąca i wypisze jego nazwę, lub komunikat "Nieprawidlowy numer miesiaca", jeżeli podany numer będzie spoza zakresu 1..12. Skorzystaj z instrukcji switch.
 
