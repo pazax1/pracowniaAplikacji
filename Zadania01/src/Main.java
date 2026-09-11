@@ -62,23 +62,34 @@ void main() {
     kota
     To program powinien wypisać kota, ma, Ala */
 
-    String pierwsze;
-    String drugie;
-    String trzecie;
-
-    System.out.print("Podaj pierwsze slowo: ");
-    pierwsze = scanner.nextLine();
-    System.out.print("Podaj drugie slowo: ");
-    drugie = scanner.nextLine();
-    System.out.print("Podaj trzecie slowo: ");
-    trzecie = scanner.nextLine();
-
-    System.out.println(trzecie + " " + drugie + " " + pierwsze);
+//    String pierwsze;
+//    String drugie;
+//    String trzecie;
+//
+//    System.out.print("Podaj pierwsze slowo: ");
+//    pierwsze = scanner.nextLine();
+//    System.out.print("Podaj drugie slowo: ");
+//    drugie = scanner.nextLine();
+//    System.out.print("Podaj trzecie slowo: ");
+//    trzecie = scanner.nextLine();
+//
+//    System.out.println(trzecie + " " + drugie + " " + pierwsze);
 
 
     /* Zad.7 Napisz program, który wczyta od użytkownika jeden wyraz i wypisz liczbę znaków, z których się składa. Dla przykładu, dla podanego słowa nauka wypisze 5.
 
     Podpowiedź: Sprawdź w dokumentacji JavaDoc dla typu String jak dowiedzieć się z ile znaków składa się tekst przetrzymywany w zmiennej typu String: https://docs.oracle.com/javase/8/docs/api/java/lang/String.html */
+
+    String slowo;
+    int dlugosc;
+
+    System.out.print("Podaj słowo: ");
+
+    slowo = scanner.nextLine();
+
+    dlugosc = slowo.length();
+
+    System.out.println("Liczba liter w słowie " + slowo + " to: " + dlugosc);
 
     /* Zad.8 Zmień poniższy kod, by wynik wypisany na ekran nie był liczbą zaokrągloną do całkowitej wartości, lecz zmienną rzeczywistą (z częścią ułamkową):
 
