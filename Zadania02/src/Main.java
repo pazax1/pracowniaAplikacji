@@ -6,21 +6,40 @@ void main() {
 
     Scanner scanner = new Scanner(System.in);
 
-    int liczba ;
+//    int liczba ;
+//
+//    System.out.println("Podaj liczbe: ");
+//
+//    liczba = scanner.nextInt();
+//
+//    if (liczba % 3 == 0) {
+//        System.out.println("Podzielna przez 3 bez reszty");
+//    }
+//
+//    else {
+//        System.out.println("Podzielna przez 3 z reszta");
+//    }
 
-    System.out.println("Podaj liczbe: ");
+//    Zadanie 2. Napisz program, który wczyta od użytkownika trzy liczby i odpowie na pytanie, czy można z nich zbudować trójkąt (suma każdych dwóch boków powinna być większa od trzeciego boku).
 
-    liczba = scanner.nextInt();
+    double bokA;
+    double bokB;
+    double bokC;
 
-    if (liczba % 3 == 0) {
-        System.out.println("Podzielna przez 3 bez reszty");
+    System.out.println("Podaj bok A: ");
+    bokA = scanner.nextDouble();
+    System.out.println("Podaj bok B: ");
+    bokB = scanner.nextDouble();
+    System.out.println("Podaj bok C: ");
+    bokC = scanner.nextDouble();
+
+    if (bokA + bokB > bokC || bokB + bokC > bokA || bokA + bokC > bokB) {
+        System.out.println("Mozna zrobic trojkat");
     }
 
     else {
-        System.out.println("Podzielna przez 3 z reszta");
+        System.out.println("Nie mozna zrobic trojkata");
     }
-
-//    Zadanie 2. Napisz program, który wczyta od użytkownika trzy liczby i odpowie na pytanie, czy można z nich zbudować trójkąt (suma każdych dwóch boków powinna być większa od trzeciego boku).
 
 //            Zadanie 3. Napisz program, który pobierze od użytkownika dwie liczby i wypisze największą z nich.
 
