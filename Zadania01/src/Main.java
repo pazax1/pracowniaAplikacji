@@ -80,23 +80,23 @@ void main() {
 
     Podpowiedź: Sprawdź w dokumentacji JavaDoc dla typu String jak dowiedzieć się z ile znaków składa się tekst przetrzymywany w zmiennej typu String: https://docs.oracle.com/javase/8/docs/api/java/lang/String.html */
 
-    String slowo;
-    int dlugosc;
+//    String slowo;
+//    int dlugosc;
+//
+//    System.out.print("Podaj słowo: ");
+//
+//    slowo = scanner.nextLine();
+//
+//    dlugosc = slowo.length();
+//
+//    System.out.println("Liczba liter w słowie " + slowo + " to: " + dlugosc);
 
-    System.out.print("Podaj słowo: ");
+    // Zad.8 Zmień poniższy kod, by wynik wypisany na ekran nie był liczbą zaokrągloną do całkowitej wartości, lecz zmienną rzeczywistą (z częścią ułamkową):
 
-    slowo = scanner.nextLine();
-
-    dlugosc = slowo.length();
-
-    System.out.println("Liczba liter w słowie " + slowo + " to: " + dlugosc);
-
-    /* Zad.8 Zmień poniższy kod, by wynik wypisany na ekran nie był liczbą zaokrągloną do całkowitej wartości, lecz zmienną rzeczywistą (z częścią ułamkową):
-
-    int x = 5;
-    int y = 2;
+    double x = 5;
+    double y = 2;
     double wynik = x / y;
-    System.out.println(wynik); */
+    System.out.println(wynik);
 
     // Zad.9 Napisz program, który pobierze od użytkownika słowo i wypisze je z małymi literami zamienionymi na wielkie. Skorzystaj z metody toUpperCase typu String.
 
