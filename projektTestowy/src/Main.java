@@ -4,4 +4,5 @@ void main() {
     Scanner scanner = new Scanner(System.in);
 
     int wiek = scanner.nextInt();
+
 }
