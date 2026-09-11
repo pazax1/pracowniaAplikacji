@@ -100,13 +100,22 @@ void main() {
 
     // Zad.9 Napisz program, który pobierze od użytkownika słowo i wypisze je z małymi literami zamienionymi na wielkie. Skorzystaj z metody toUpperCase typu String.
 
-    String slowo;
+//    String slowo;
+//
+//    System.out.print("Podaj slowo: ");
+//
+//    slowo = scanner.nextLine();
+//
+//    System.out.println("Zamienione słowo: " + slowo.toUpperCase());
 
-    System.out.print("Podaj slowo: ");
+    // Zad.10 Napisz program, który policzy pole koła o promieniu podanym przez użytkownika i wypisze wynik na ekran. Promień koła powinien być liczbą całkowitą –
+    // do jego przechowywania użyj zmiennej typu int.
 
-    slowo = scanner.nextLine();
+    int promien;
 
-    System.out.println("Zamienione słowo: " + slowo.toUpperCase());
+    System.out.print("Podaj promien kola: ");
 
-    // Zad.10 Napisz program, który policzy pole koła o promieniu podanym przez użytkownika i wypisze wynik na ekran. Promień koła powinien być liczbą całkowitą – do jego przechowywania użyj zmiennej typu int.
+    promien = scanner.nextInt();
+
+    System.out.println("Pole kola = " + 3.14 * promien * promien);
 }
