@@ -14,6 +14,10 @@ void main() {
 
             - przechowującą liczbę 0,66 */
 
+    String imie = "Tomek";
+    int rokUrodzenia = 2007;
+    double liczba = 0.66;
+
     /* Zad.3 Wypisz na ekranie poniższe zdanie, gdzie informacje zawarte w znacznikach <> zastąpisz zmiennymi lub działaniami.
 
     Mam na imię <imie>, mam <obecny rok minus Twój rok urodzenia> lat  i będę pisać maturę za <zmienna 0,66> roku. */
