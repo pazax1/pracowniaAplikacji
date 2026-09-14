@@ -142,20 +142,41 @@ void main() {
 //
 //            Uwaga! Pamiętaj, aby skorzystać z metody equals typu String zamiast porównywać stringi za pomocą operatora == !
 
-    String mojeImie = "Tomek";
+//    String mojeImie = "Tomek";
+//
+//    System.out.println("Podaj swoje imie: ");
+//    String imieUzytkownika = scanner.nextLine();
+//
+//    if (imieUzytkownika.equals(mojeImie)) {
+//        System.out.println("Twoje imie jest takie samo jak moje");
+//    }
+//
+//    else {
+//        System.out.println("Twoje imie jest inne niz moje");
+//    }
 
-    System.out.println("Podaj swoje imie: ");
-    String imieUzytkownika = scanner.nextLine();
+//            Zadanie 7. Napisz program, który pobiera wiek od użytkownika. Zapisz w zmiennej typu boolean informację, czy użytkownik jest pełnoletni, czy nie. Skorzystaj z trój-argumentowego operatora warunkowego.
+//            Wypisz wynik zdefiniowanej zmiennej typu boolean na ekran.
 
-    if (imieUzytkownika.equals(mojeImie)) {
-        System.out.println("Twoje imie jest takie samo jak moje");
+    System.out.print("Podaj swoj wiek: ");
+    int wiek;
+    wiek = scanner.nextInt();
+    boolean jestPelnoletni = false;
+
+    if (wiek >= 18) {
+        jestPelnoletni = true;
+        System.out.println(jestPelnoletni);
+    }
+
+    else if (wiek < 18 && wiek > 0) {
+        jestPelnoletni = false;
+        System.out.println(jestPelnoletni);
     }
 
     else {
-        System.out.println("Twoje imie jest inne niz moje");
+        System.out.println("Nie mozesz byc mlodszy od 0");
     }
 
-//            Zadanie 7. Napisz program, który pobiera wiek od użytkownika. Zapisz w zmiennej typu boolean informację, czy użytkownik jest pełnoletni, czy nie. Skorzystaj z trój-argumentowego operatora warunkowego. Wypisz wynik zdefiniowanej zmiennej typu boolean na ekran.
 
 //            Zadanie 8. Napisz program, który pobierze od użytkownika rok i odpowie na pytanie, czy podany rok jest rokiem przestępnym, czy nie. Wskazówka: rok jest rokiem przestępnym, jeżeli:
 //
