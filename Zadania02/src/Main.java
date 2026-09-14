@@ -185,20 +185,47 @@ void main() {
 //
 //    dzieli się przez 400.
 
-        int rok;
+//        int rok;
+//
+//    System.out.println("Podaj rok: ");
+//
+//    rok = scanner.nextInt();
+//
+//    if (rok % 4 == 0 && rok % 100 != 0) {
+//        System.out.println("Rok jest przestepny");
+//    }
+//
+//    else {
+//        System.out.println("Rok nie jest przestepny");
+//    }
 
-    System.out.println("Podaj rok: ");
+//    Zadanie 9. Napisz program, który oblicza wartość współczynnika BMI (ang. body mass index) wg. wzoru: waga/wzrost^2. Jeżeli wynik jest w przedziale (18,5 - 24,9) to wypisuje "waga prawidłowa",
+//    jeżeli poniżej to "niedowaga", jeżeli powyżej "nadwaga".
 
-    rok = scanner.nextInt();
+    double waga;
+    double wzrost;
+    double bmi;
 
-    if (rok % 4 == 0 && rok % 100 != 0) {
-        System.out.println("Rok jest przestepny");
+    System.out.println("Podaj swoja wage: ");
+    waga = scanner.nextInt();
+    System.out.println("Podaj swoj wzrost: ");
+    wzrost = scanner.nextInt();
+
+    wzrost = wzrost/100;
+
+    bmi = waga/(wzrost*wzrost);
+
+    if (bmi < 18.5) {
+        System.out.println("Niedowaga");
+    }
+
+    else if (bmi > 24.9) {
+        System.out.println("Nadwaga");
     }
 
     else {
-        System.out.println("Rok nie jest przestepny");
+        System.out.println("BMI w normie");
     }
-//    Zadanie 9. Napisz program, który oblicza wartość współczynnika BMI (ang. body mass index) wg. wzoru: waga/wzrost^2. Jeżeli wynik jest w przedziale (18,5 - 24,9) to wypisuje "waga prawidłowa", jeżeli poniżej to "niedowaga", jeżeli powyżej "nadwaga".
 
 //            Zadanie 10. W sklepie ze sprzętem AGD oferowana jest sprzedaż ratalna. Napisz program umożliwiający wyliczenie wysokości miesięcznej raty za zakupiony sprzęt. Danymi wejściowymi dla programu są:
 //
