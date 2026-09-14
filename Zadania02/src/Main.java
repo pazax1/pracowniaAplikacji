@@ -158,24 +158,24 @@ void main() {
 //            Zadanie 7. Napisz program, który pobiera wiek od użytkownika. Zapisz w zmiennej typu boolean informację, czy użytkownik jest pełnoletni, czy nie. Skorzystaj z trój-argumentowego operatora warunkowego.
 //            Wypisz wynik zdefiniowanej zmiennej typu boolean na ekran.
 
-    System.out.print("Podaj swoj wiek: ");
-    int wiek;
-    wiek = scanner.nextInt();
-    boolean jestPelnoletni = false;
-
-    if (wiek >= 18) {
-        jestPelnoletni = true;
-        System.out.println(jestPelnoletni);
-    }
-
-    else if (wiek < 18 && wiek > 0) {
-        jestPelnoletni = false;
-        System.out.println(jestPelnoletni);
-    }
-
-    else {
-        System.out.println("Nie mozesz byc mlodszy od 0");
-    }
+//    System.out.print("Podaj swoj wiek: ");
+//    int wiek;
+//    wiek = scanner.nextInt();
+//    boolean jestPelnoletni = false;
+//
+//    if (wiek >= 18) {
+//        jestPelnoletni = true;
+//        System.out.println(jestPelnoletni);
+//    }
+//
+//    else if (wiek < 18 && wiek > 0) {
+//        jestPelnoletni = false;
+//        System.out.println(jestPelnoletni);
+//    }
+//
+//    else {
+//        System.out.println("Nie mozesz byc mlodszy od 0");
+//    }
 
 
 //            Zadanie 8. Napisz program, który pobierze od użytkownika rok i odpowie na pytanie, czy podany rok jest rokiem przestępnym, czy nie. Wskazówka: rok jest rokiem przestępnym, jeżeli:
@@ -184,6 +184,20 @@ void main() {
 //    lub
 //
 //    dzieli się przez 400.
+
+        int rok;
+
+    System.out.println("Podaj rok: ");
+
+    rok = scanner.nextInt();
+
+    if (rok % 4 == 0 && rok % 100 != 0) {
+        System.out.println("Rok jest przestepny");
+    }
+
+    else {
+        System.out.println("Rok nie jest przestepny");
+    }
 //    Zadanie 9. Napisz program, który oblicza wartość współczynnika BMI (ang. body mass index) wg. wzoru: waga/wzrost^2. Jeżeli wynik jest w przedziale (18,5 - 24,9) to wypisuje "waga prawidłowa", jeżeli poniżej to "niedowaga", jeżeli powyżej "nadwaga".
 
 //            Zadanie 10. W sklepie ze sprzętem AGD oferowana jest sprzedaż ratalna. Napisz program umożliwiający wyliczenie wysokości miesięcznej raty za zakupiony sprzęt. Danymi wejściowymi dla programu są:
