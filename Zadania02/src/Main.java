@@ -91,56 +91,69 @@ void main() {
 
 //    Zadanie 5. Napisz program, który pobierze od użytkownika numer miesiąca i wypisze jego nazwę, lub komunikat "Nieprawidlowy numer miesiaca", jeżeli podany numer będzie spoza zakresu
 //    1..12. Skorzystaj z instrukcji switch.
-    int liczba;
-    String mies = "";
+    // int liczba;
+    // String mies = "";
 
-    System.out.println("Podaj miesiac: ");
-    liczba = scanner.nextInt();
+    // System.out.println("Podaj miesiac: ");
+    // liczba = scanner.nextInt();
 
-    switch (liczba) {
-        case 1:
-            mies = "Styczen";
-            break;
-        case 2:
-            mies = "Luty";
-            break;
-        case 3:
-            mies = "Marzec";
-            break;
-        case 4:
-            mies = "Kwiecien";
-            break;
-        case 5:
-            mies = "Maj";
-            break;
-        case 6:
-            mies = "Czerwiec";
-            break;
-        case 7:
-            mies = "Lipiec";
-            break;
-        case 8:
-            mies = "Sierpien";
-            break;
-        case 9:
-            mies = "Wrzesien";
-            break;
-        case 10:
-            mies = "Pazdziernik";
-            break;
-        case 11:
-            mies = "Listopad";
-            break;
-        case 12:
-            mies = "Grudzien";
-            break;
-    }
+    // switch (liczba) {
+    //     case 1:
+    //         mies = "Styczen";
+    //         break;
+    //     case 2:
+    //         mies = "Luty";
+    //         break;
+    //     case 3:
+    //         mies = "Marzec";
+    //         break;
+    //     case 4:
+    //         mies = "Kwiecien";
+    //         break;
+    //     case 5:
+    //         mies = "Maj";
+    //         break;
+    //     case 6:
+    //         mies = "Czerwiec";
+    //         break;
+    //     case 7:
+    //         mies = "Lipiec";
+    //         break;
+    //     case 8:
+    //         mies = "Sierpien";
+    //         break;
+    //     case 9:
+    //         mies = "Wrzesien";
+    //         break;
+    //     case 10:
+    //         mies = "Pazdziernik";
+    //         break;
+    //     case 11:
+    //         mies = "Listopad";
+    //         break;
+    //     case 12:
+    //         mies = "Grudzien";
+    //         break;
+    // }
 
-    System.out.println(mies);
+    // System.out.println(mies);
 
 //    Zadanie 6. Napisz program, który pobierze od użytkownika jego imię i odpowie na pytanie, czy jego imię jest takie samo, jak Twoje (załóżmy, że użytkownik podaje swoje imię bez polskich znaków).
 //
 //            Uwaga! Pamiętaj, aby skorzystać z metody equals typu String zamiast porównywać stringi za pomocą operatora == !
+
+    String mojeImie = "Tomek";
+
+    System.out.println("Podaj swoje imie: ");
+    String imieUzytkownika = scanner.nextLine();
+
+    if (imieUzytkownika.equals(mojeImie)) {
+        System.out.println("Twoje imie jest takie samo jak moje");
+    }
+
+    else {
+        System.out.println("Twoje imie jest inne niz moje");
+    }
 
 //            Zadanie 7. Napisz program, który pobiera wiek od użytkownika. Zapisz w zmiennej typu boolean informację, czy użytkownik jest pełnoletni, czy nie. Skorzystaj z trój-argumentowego operatora warunkowego. Wypisz wynik zdefiniowanej zmiennej typu boolean na ekran.
 
