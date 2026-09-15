@@ -239,55 +239,57 @@ void main() {
 //    Obliczona miesięczna rata powinna zawierać również odsetki. Program powinien sprawdzać, czy podane dane mieszczą się w określonych powyżej zakresach, a w przypadku błędu pytać
 //    prosić użytkownika ponownie o podanie danych.
 
-    double cenaTowaru = 0;
-    int liczbaRat = 0;
-    double kredyt;
+//    double cenaTowaru = 0;
+//    int liczbaRat = 0;
+//    double kredyt;
+//
+//    boolean dobraCena = false;
+//    boolean dobreRaty = false;
+//
+//    while (!dobraCena) {
+//        System.out.println("Podaj cene towaru: ");
+//        cenaTowaru = scanner.nextDouble();
+//        if (cenaTowaru < 100 || cenaTowaru > 10000) {
+//            System.out.println("Nieprawidlowa cena towaru");
+//        }
+//        else {
+//            dobraCena = true;
+//        }
+//
+//    }
+//
+//    while (!dobreRaty) {
+//        System.out.println("Podaj ilosc rat: ");
+//        liczbaRat = scanner.nextInt();
+//
+//        if (liczbaRat < 6 || liczbaRat > 48) {
+//            System.out.println("Zla ilosc rat");
+//        }
+//        else {
+//            dobreRaty = true;
+//        }
+//    }
+//
+//    if (liczbaRat >= 6 || liczbaRat <= 12) {
+//        System.out.println(kredyt = (cenaTowaru + (cenaTowaru * 0.025)) / liczbaRat);
+//    }
+//
+//    else if (liczbaRat >= 13 || liczbaRat <= 24) {
+//        System.out.println(kredyt = (cenaTowaru + (cenaTowaru * 0.05)) / liczbaRat);
+//    }
+//
+//    else if (liczbaRat >= 25 || liczbaRat <=48) {
+//        System.out.println(kredyt = (cenaTowaru + (cenaTowaru * 0.1)) / liczbaRat);
+//    }
+//
+//    else {
+//        System.out.println("Error");
+//    }
 
-    boolean dobraCena = false;
-    boolean dobreRaty = false;
 
-    while (!dobraCena) {
-        System.out.println("Podaj cene towaru: ");
-        cenaTowaru = scanner.nextDouble();
-        if (cenaTowaru < 100 || cenaTowaru > 10000) {
-            System.out.println("Nieprawidlowa cena towaru");
-        }
-        else {
-            dobraCena = true;
-        }
-
-    }
-
-    while (!dobreRaty) {
-        System.out.println("Podaj ilosc rat: ");
-        liczbaRat = scanner.nextInt();
-
-        if (liczbaRat < 6 || liczbaRat > 48) {
-            System.out.println("Zla ilosc rat");
-        }
-        else {
-            dobreRaty = true;
-        }
-    }
-
-    if (liczbaRat >= 6 || liczbaRat <= 12) {
-        System.out.println(kredyt = (cenaTowaru + (cenaTowaru * 0.025)) / liczbaRat);
-    }
-
-    else if (liczbaRat >= 13 || liczbaRat <= 24) {
-        System.out.println(kredyt = (cenaTowaru + (cenaTowaru * 0.05)) / liczbaRat);
-    }
-
-    else if (liczbaRat >= 25 || liczbaRat <=48) {
-        System.out.println(kredyt = (cenaTowaru + (cenaTowaru * 0.1)) / liczbaRat);
-    }
-
-    else {
-        System.out.println("Error");
-    }
-
-
-//    Zadanie 11. Napisać program realizujący funkcje prostego kalkulatora, pozwalającego na wykonywanie operacji dodawania, odejmowania, mnożenia i dzielenia na dwóch liczbach rzeczywistych. Program ma identyfikować sytuację wprowadzenia błędnego symbolu działania oraz próbę dzielenia przez zero. Zastosować instrukcję switch do wykonania odpowiedniego działania w zależności od wprowadzonego symbolu operacji. Scenariusz działania programu:
+//    Zadanie 11. Napisać program realizujący funkcje prostego kalkulatora, pozwalającego na wykonywanie operacji dodawania, odejmowania, mnożenia i dzielenia na dwóch liczbach rzeczywistych.
+//    Program ma identyfikować sytuację wprowadzenia błędnego symbolu działania oraz próbę dzielenia przez zero. Zastosować instrukcję switch do wykonania odpowiedniego działania w zależności
+//    od wprowadzonego symbolu operacji. Scenariusz działania programu:
 //
 //    a) Program wyświetla informację o swoim przeznaczeniu.
 //
@@ -298,4 +300,45 @@ void main() {
 //    d) Wczytuje drugą liczbę.
 //
 //            e) Wyświetla wynik lub w razie konieczności informację o niemożności wy konania działania.
+
+    double a;
+    double b;
+    String operator;
+    double wynik = 0;
+
+    System.out.print("Podaj pierwsza liczbe: ");
+    a = scanner.nextDouble();
+    System.out.print("Podaj operatora: ");
+    operator = scanner.next();
+    System.out.print("Podaj druga liczbe: ");
+    b = scanner.nextDouble();
+
+    switch(operator) {
+        case "+":
+            wynik = a + b;
+            break;
+        case "-":
+            wynik = a - b;
+            break;
+        case "*":
+            wynik = a * b;
+            break;
+        case "/":
+            if (b == 0) {
+                System.out.println("Nie mozna dzielic przez 0!");
+                break;
+            }
+
+            else {
+                wynik = a / b;
+                break;
+            }
+
+        default:
+            System.out.println("Zly operator!");
+            break;
+    }
+
+    System.out.println(wynik);
+
 }
