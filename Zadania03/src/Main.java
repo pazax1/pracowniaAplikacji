@@ -1,28 +1,114 @@
-//Zadanie 1. Napisz program, który pobiera od użytkownika liczbę całkowita dodatnia, a następnie wyświetla na ekranie kolejno wszystkie liczby nieparzyste nie większe
-//od podanej liczby. Przykład: dla 15 program powinien wyświetlić: 1, 3, 5, 7, 9, 11, 13, 15.
-
 void main() {
     Scanner scanner = new Scanner(System.in);
-    boolean isCorrectNum = false;
-    int number = 0;
+//    boolean isCorrectNum = false;
+//    int number = 0;
+//
+//    while (!isCorrectNum) {
+//        System.out.println("Podaj liczbe calkowita dodatnia: ");
+//        number = scanner.nextInt();
+//
+//        if (number < 0) {
+//            System.out.println("Podana liczba jest ujemna");
+//        } else {
+//            isCorrectNum = true;
+//
+//            if (number % 2 == 0) {
+//                number--;
+//            }
+//        }
+//
+//        for (int i = 0; i < number; number = number - 2) {
+//            System.out.println(number + " ");
+//        }
+//
+//    }
 
-    while (!isCorrectNum) {
-        System.out.println("Podaj liczbe calkowita dodatnia: ");
-        number = scanner.nextInt();
+    // zad 2
 
-        if (number < 0) {
-            System.out.println("Podana liczba jest ujemna");
-        } else {
-            isCorrectNum = true;
+//    boolean isCorrectNum = false;
+//    int number = 0;
+//
+//    while (!isCorrectNum) {
+//        System.out.println("Podaj liczbe calkowita dodatnia: ");
+//        number = scanner.nextInt();
+//
+//        if (number < 0) {
+//            System.out.println("Podana liczba jest ujemna");
+//        } else {
+//            isCorrectNum = true;
+//        }
+//
+//        for (int i = 0; Math.pow(2, i) <= number; i++) {
+//            System.out.println(Math.pow(2, i));
+//        }
+//
+//    }
 
-            if (number % 2 == 0) {
-                number--;
-            }
-        }
+//    zad 3
 
-        for (int i = 0; i < number; number = number - 2) {
-            System.out.println(number + " ");
-        }
+//    boolean isNotZero = false;
+//    int num = 0;
+//    int result = 0;
+//
+//    while (!isNotZero) {
+//        System.out.println("Podaj liczbe: ");
+//        num = scanner.nextInt();
+//        result += num;
+//
+//        if (num == 0) {
+//            System.out.println(result);
+//            break;
+//        }
+//    }
 
-    }
+    // zad 4
+
+//    boolean isNotZero = false;
+//    int num = 0;
+//    int max = 0;
+//    int min = 0;
+//
+//    while (!isNotZero) {
+//        System.out.println("Podaj liczbe: ");
+//        num = scanner.nextInt();
+//        if (min > num) {
+//            min = num;
+//        }
+//
+//        if (max < num) {
+//            max = num;
+//        }
+//        if (num == 0) {
+//            System.out.println("Suma najwiekszej i najmniejszej: " + (max + min) + " Srednia tych dwoch liczb: " + ((max + min) / 2));
+//            break;
+//        }
+//    }
+
+    // zad 5
+
+//    double randomNum = Math.ceil(Math.random() * 100 + 1);
+//    int randomNumInt = (int) randomNum;
+//    int userNum = 0;
+//    boolean isCorrectNum = false;
+//
+//
+//    while (!isCorrectNum) {
+//        System.out.println("Podaj liczbe 1 - 100: ");
+//        userNum = scanner.nextInt();
+//
+//        if (userNum == randomNumInt) {
+//            System.out.println("Brawo!");
+//            isCorrectNum = true;
+//        } else {
+//            System.out.println("Strzelaj dalej");
+//        }
+//    }
+
+    // zad 6
+
+//    Zadanie 6. Napisać program działający w trybie konsolowym (tekstowym) i rysujący na ekranie prostokąt. Użytkownik podaje znak wypełnienia prostokąta (np. x),
+//            pozycje lewego górnego rogu prostokąta (x, y) oraz długości boków prostokąta (a, b). Przyjmujemy, że lewy górny narożnik konsoli ma współrzędne (x, y) = (1, 1).
+
+
+
 }
