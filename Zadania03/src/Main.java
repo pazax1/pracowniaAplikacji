@@ -106,9 +106,41 @@ void main() {
 
     // zad 6
 
-//    Zadanie 6. Napisać program działający w trybie konsolowym (tekstowym) i rysujący na ekranie prostokąt. Użytkownik podaje znak wypełnienia prostokąta (np. x),
-//            pozycje lewego górnego rogu prostokąta (x, y) oraz długości boków prostokąta (a, b). Przyjmujemy, że lewy górny narożnik konsoli ma współrzędne (x, y) = (1, 1).
+//    String filling = "";
+//    int sideA;
+//    int sideB;
+//
+//    System.out.print("Znak wypelnienia prostokata: ");
+//    filling = scanner.nextLine();
+//    System.out.print("Dlugosc boku A prostokata: ");
+//    sideA = scanner.nextInt();
+//    System.out.print("Dlugosc boku B prostokata: ");
+//    sideB = scanner.nextInt();
+//
+//    for (int i = 0; i < sideA; i++) {
+//        for (int j = 0; j < sideB; j++) {
+//                System.out.print(filling);
+//            }
+//        System.out.println();
+//        }
 
+    //zad 7
 
+//    Zadanie 7. Napisać program rysujący w konsoli „choinkę” złożoną ze znaków gwiazdki (*). Użytkownik programu powinien podać liczbę całkowita n, n > 0,
+//            określającą wysokość choinki (liczbę wierszy). Przykład: dla n = 5 wynik powinien wyglądać następująco:
+
+    int treeLength;
+    int treeBranch = 1;
+
+    System.out.print("Podaj dlugosc choinki: ");
+    treeLength = scanner.nextInt();
+
+    for (int i = 0; i < treeLength; i++) {
+        for (int j = 0; j < treeBranch; j++) {
+            System.out.print("*");
+        }
+        treeBranch += 2;
+        System.out.println();
+    }
 
 }
