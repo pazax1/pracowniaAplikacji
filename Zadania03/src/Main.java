@@ -126,21 +126,66 @@ void main() {
 
     //zad 7
 
-//    Zadanie 7. Napisać program rysujący w konsoli „choinkę” złożoną ze znaków gwiazdki (*). Użytkownik programu powinien podać liczbę całkowita n, n > 0,
-//            określającą wysokość choinki (liczbę wierszy). Przykład: dla n = 5 wynik powinien wyglądać następująco:
+//    int treeLength;
+//    int treeBranch = 1;
+//
+//    System.out.print("Podaj dlugosc choinki: ");
+//    treeLength = scanner.nextInt();
+//
+//    for (int i = 0; i < treeLength; i++) {
+//        for (int j = 0; j < treeBranch; j++) {
+//            System.out.print("*");
+//        }
+//        treeBranch += 2;
+//        System.out.println();
+//    }
 
-    int treeLength;
-    int treeBranch = 1;
+    //zad 8
 
-    System.out.print("Podaj dlugosc choinki: ");
-    treeLength = scanner.nextInt();
+//            System.out.print("Podaj liczbę: ");
+//            int liczba = scanner.nextInt();
+//
+//            int silnia = 1;
+//
+//            for (int i = 1; i <= liczba; i++) {
+//                silnia *= i;
+//            }
+//
+//            System.out.println("Silnia wynosi: " + silnia);
 
-    for (int i = 0; i < treeLength; i++) {
-        for (int j = 0; j < treeBranch; j++) {
-            System.out.print("*");
+    //zad 9
+
+
+//            System.out.print("Podaj słowo: ");
+//            String slowo = scanner.nextLine();
+//
+//            String odwrocone = new StringBuilder(slowo).reverse().toString();
+//
+//            if (slowo.equals(odwrocone)) {
+//                System.out.println("To jest palindrom.");
+//            } else {
+//                System.out.println("To nie jest palindrom.");
+//            }
+
+//    Zadanie 10. Napisz program z dwoma pętlami (jedna zagnieżdżona w drugiej), każda z pętli powinna iterować od 1 do 10.
+//
+//    Pętla główna powinna pomijać swoje iteracje za pomocą instrukcji continue, gdy jej zmienna jest nieparzysta.
+//            Pętla zagnieżdżona powinna wypisywać wartość swojej zmiennej.
+//    Następnie, gdy zmienna pętli zagnieżdżonej jest większa od zmiennej pętli głównej, pętla zagnieżdżona powinna
+//    spowodować, że przejdziemy do kolejnej iteracji pętli głównej (w tym przypadku skorzystaj z etykiety i instrukcji continue).
+
+    for (int i = 1; i <= 10; i++) {
+        if (i%2==1) {
+            continue;
         }
-        treeBranch += 2;
-        System.out.println();
+        System.out.println("i = " + i);
+        for (int j = 1; j <= 10; j++) {
+            if (j > i) {
+                continue;
+            }
+            System.out.println("j = " + j);
+        }
     }
+
 
 }
